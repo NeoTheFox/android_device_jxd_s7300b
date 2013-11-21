@@ -112,6 +112,7 @@ PRODUCT_PACKAGES += \
 
 # AML Misc
 PRODUCT_PACKAGES += \
+    HdmiSwitch \
     libamplayerjni \
     libsubjni \
     amlogic.subtitle.xml \
