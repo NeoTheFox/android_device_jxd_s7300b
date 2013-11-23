@@ -108,7 +108,8 @@ PRODUCT_PACKAGES += \
     libaudioutils \
     tinycap \
     tinyplay \
-    tinymix
+    tinymix \
+    audio_firmware
 
 # AML Misc
 PRODUCT_PACKAGES += \
