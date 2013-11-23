@@ -27,8 +27,8 @@ media.amplayer.stopbuflevel=0.5
 media.libplayer.seek.fwdsearch=1
 gadget.nand.force_sync=true
 ro.hdmi480p.enable=false
-ro.vout.dualdisplay2=true
-ro.vout.dualdisplay3=false
+ro.vout.dualdisplay2=false
+ro.vout.dualdisplay3=true
 persist.sys.usb.config=mtp
 ro.bq.gpu_to_cpu_unsupported=1
 # power hal
