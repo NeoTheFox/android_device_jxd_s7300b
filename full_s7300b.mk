@@ -69,6 +69,14 @@ PRODUCT_COPY_FILES += \
 
 DEVICE_PACKAGE_OVERLAYS := device/jxd/s7300b/overlay
 
+# init.d scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.d/10modules:system/etc/init.d/10modules
+
+# Prebuilt kernel modules
+PRODUCT_COPY_FILES += \
+        $(call find-copy-subdir-files,*,device/jxd/s7300b/modules,system/lib/modules)
+
 # AML HAL
 PRODUCT_PACKAGES += \
     camera.amlogic.so \

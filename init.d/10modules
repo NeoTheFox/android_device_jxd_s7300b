@@ -1,0 +1,5 @@
+#!/system/bin/sh
+#
+
+# Miscellaneous
+insmod /system/lib/modules/uinput.ko
