@@ -121,6 +121,7 @@ BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun0/file"
 BOARD_UMS_2ND_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun1/file"
 TARGET_RECOVERY_FSTAB := device/jxd/s7300b/fstab.amlogic
 RECOVERY_FSTAB_VERSION := 2
+BOARD_RECOVERY_SWIPE := true
 
 #TWRP
 DEVICE_RESOLUTION := 1024x600
