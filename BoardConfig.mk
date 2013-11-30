@@ -110,7 +110,7 @@ COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB -DICS_CAMERA_BLOB -DBOARD_EGL_NEEDS_LEG
 #-DALLOW_DEQUEUE_CURRENT_BUFFER
 
 #CWM
-RECOVERY_NAME := CWM-based Recovery by giannoug
+RECOVERY_NAME := CWM-based Recovery by TeamNostalgia
 BOARD_CUSTOM_RECOVERY_KEYMAPPING = := ../../device/jxd/s7300b/recovery_keys.c
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun%d/file"
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun0/file"
