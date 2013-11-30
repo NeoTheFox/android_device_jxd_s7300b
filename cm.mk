@@ -1,3 +1,7 @@
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1024
+TARGET_SCREEN_WIDTH := 600
+
 # Inherit device configuration for JXD S7300B.
 $(call inherit-product, device/jxd/s7300b/full_s7300b.mk)
 
