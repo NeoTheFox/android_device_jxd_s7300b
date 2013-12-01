@@ -46,7 +46,7 @@ int device_handle_key(int key_code, int visible) {
             case KEY_CAMERA:
             case KEY_F21:
             case KEY_SEND:
-            case 305:
+            case 304:
                 return SELECT_ITEM;
             
             case KEY_END:
@@ -59,7 +59,7 @@ int device_handle_key(int key_code, int visible) {
                     return GO_BACK;
                 }
             case KEY_BACK:
-            case 304:
+            case 305:
                 if (!ui_root_menu) {
                     return GO_BACK;
                 }
