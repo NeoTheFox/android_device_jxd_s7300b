@@ -3,3 +3,4 @@
 
 # Miscellaneous
 insmod /system/lib/modules/uinput.ko
+insmod /system/lib/modules/cifs.ko
