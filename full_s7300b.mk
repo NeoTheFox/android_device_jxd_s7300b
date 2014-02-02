@@ -69,8 +69,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
-DEVICE_PACKAGE_OVERLAYS := device/jxd/s7300b/overlay
-
 # init.d scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.d/10modules:system/etc/init.d/10modules
@@ -96,10 +94,10 @@ PRODUCT_PACKAGES += \
     libUMP.so
 
 # AML RIL
-PRODUCT_PACKAGES += \
-    libaml-ril.so \
-    init-pppd.sh \
-    ip-up
+#PRODUCT_PACKAGES += \
+#    libaml-ril.so \
+#    init-pppd.sh \
+#    ip-up
 #Phone \
 
 # ALSA
@@ -137,42 +135,16 @@ PRODUCT_PACKAGES += \
     usbtestpm_mx_iddq \
     usbpower_mx_iddq
 
-# wifi
-PRODUCT_PACKAGES += \
-    libnetcmdiface
-
 # libemoji for Webkit
 PRODUCT_PACKAGES += libemoji
     
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.secure=0 \
     ro.allow.mock.location=1 \
-    ro.debuggable=1
-#    service.adb.root=1 \
+    ro.debuggable=1 \
+    service.adb.root=1
 #    persist.sys.usb.config=adb\
 #    persist.service.adb.enable=1 \
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.locationfeatures=1 \
-    ro.setupwizard.enable_bypass=1 \
-    dalvik.vm.execution-mode=int:jit \
-    dalvik.vm.lockprof.threshold=500 \
-    dalvik.vm.verify-bytecode=false \
-    dalvik.vm.dexopt-flags=v=n,o=v \
-    dalvik.vm.dexopt-data-only=1
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.timezone=Europe/Athens \
-    persist.sys.language=en \
-    persist.sys.country=US \
-    persist.sys.use_dithering=0 \
-    persist.sys.purgeable_assets=0 \
-    windowsmgr.max_events_per_sec=240 \
-    view.touch_slop=2 \
-    view.minimum_fling_velocity=25 \
-    ro.additionalmounts=/storage/sdcard1 \
-    ro.vold.switchablepair=/storage/sdcard0,/storage/sdcard1 \
-    persist.sys.vold.switchexternal=0
    
 PRODUCT_AAPT_CONFIG := xlarge mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
